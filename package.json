@@ -1,7 +1,7 @@
 {
   "name": "useragent-api",
   "version": "1.0.0",
-  "description": "API written to figure out User Agents. Based on browscap this API will be expanded and updated to ensure UA's are responded back.",
+  "description": "API written to figure out User Agents. Based on browscap this API will be expanded and updated to ensure UA's are responded back. Not for production use",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
