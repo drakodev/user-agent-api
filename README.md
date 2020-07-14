@@ -14,7 +14,7 @@
 
 1. Clone this repository
 2. `npm i`
-3. `node index.js` or `npm run`
+3. `node index.js` or `npm run dev`
 
 ### Usage
 
