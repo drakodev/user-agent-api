@@ -22,9 +22,9 @@ API currently provides a POST request which returns the parsed response
 
 #### API path
 
-​	http://localhost:3010/api/v1/ua 
+http://localhost:3010/api/v1/ua 
 
-	#### API Request (Body)
+#### API Request (Body)
 
 In request body provide two parameters `uaString` which you received from browser and `returnType` defining the size of response you expect `minimal` or `full` 
 
