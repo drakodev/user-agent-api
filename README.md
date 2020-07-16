@@ -1,4 +1,4 @@
-# User Agent API
+# User Agent Lookup API
 
 ### This API returns user agent from a string using browsecap
 
