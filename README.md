@@ -34,7 +34,7 @@ In request body provide two parameters `uaString` which you received from browse
 {
 	"uaString": "Microsoft Office/16.0 (Microsoft Outlook 16.0.12827; Pro), Mozilla/4.0 										(compatible; ms-office; MSOffice 16)",
 	"returnType": "minimal",
-	"token": "<SECRET SET IN TOKEN>"
+	"token": "<SECRET SET IN ENV>"
 }
 ```
 
