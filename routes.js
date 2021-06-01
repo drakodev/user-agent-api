@@ -3,11 +3,9 @@ const router = express.Router();
 const Browscap = require('browscap-js');
 const getUA = async (req, res, next) => {
         try {
-            console.log(req.body);
             const browscap = new Browscap();
             const uaString = req.body.uaString;
             const uat = browscap.getBrowser(uaString);
-            console.log(process.env.TOKEN, req.body.token);
             if(req.body.token === process.env.TOKEN) {
                 const queryType = req.body.returnType || 'minimal';
                 if (queryType === 'minimal') {
@@ -23,6 +21,8 @@ const getUA = async (req, res, next) => {
                 } else {
                     res.status(201).json(uat);
                 }
+            } else {
+                res.status(500).json('Forbidden');
             }
         } catch (e) {
             next(e);
