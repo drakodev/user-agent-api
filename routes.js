@@ -7,6 +7,7 @@ const getUA = async (req, res, next) => {
             const browscap = new Browscap();
             const uaString = req.body.uaString;
             const uat = browscap.getBrowser(uaString);
+            console.log(process.env.TOKEN, req.body.token);
             if(req.body.token === process.env.TOKEN) {
                 const queryType = req.body.returnType || 'minimal';
                 if (queryType === 'minimal') {
